@@ -25,11 +25,12 @@
         }
 
         .footer {
-            position: relative;
+            position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
             padding: 10px 0;
+            background-color: #F2D8B3;
         }
 
         .table-container {
@@ -39,39 +40,28 @@
             flex-wrap: wrap;
         }
 
-        .table-container td {
-            padding: 10px;
+        .social-icons img {
+            width: 30px;
+            height: 30px;
         }
 
-        @media screen and (max-width: 600px) {
-            .table-container td {
-                padding: 5px;
-            }
-        }
     </style>
 </head>
 <body>
-    <img src="header.png" style="width: 100%; max-width: 100%;">
-    <br>
-
+    <header> 
+        <img src="header.png" style="width: 100%; max-width: 100%;">
+    </header>
+    
     <div class="table-container">
         <table>
             <tr>
-                <td>
-                    <a href="Home.html" class="button">Home</a>
-                </td>
+                <td><a href="Home.html" class="button">Home</a></td>
             </tr>
             <tr>
-                <td>
-                    <br>
-                    <a href="Products&Services.html" class="button">Products/Services</a>
-                </td>
+                <td><br><a href="Products&Services.html" class="button">Products/Services</a></td>
             </tr>
             <tr>
-                <td>
-                    <br>
-                    <a href="About Us.html" class="button">About Us</a>
-                </td>
+                <td><br><a href="About Us.html" class="button">About Us</a></td>
             </tr>
         </table>
     </div>
@@ -79,13 +69,12 @@
 
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://www.facebook.com/veronicajoy.pavia?mibextid=ZbWKwL" target="_blank"><img src="fb-icon.png" width="30" height="30" alt="Facebook"></a>
-            <a href="https://twitter.com/mizushiii_" target="_blank"><img src="twitter-icon.png" width="30" height="30" alt="Twitter"></a>
-            <a href="https://www.instagram.com/vrnc_sy/" target="_blank"><img src="insta-icon.png" width="30" height="30" alt="Instagram"></a>
+            <a href="https://www.facebook.com/veronicajoy.pavia?mibextid=ZbWKwL" target="_blank"><img src="fb-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com/mizushiii_" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/vrnc_sy/" target="_blank"><img src="insta-icon.png" alt="Instagram"></a>
         </div>
         <p>Palanginan, Iba, Zambales | Phone: +63 995-925-4335 | Email: <a href="mailto:arteumizushiii@gmail.com">arteumizushiii@gmail.com</a></p>
         <p>&copy; 2024 Studio Mizushiii. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
