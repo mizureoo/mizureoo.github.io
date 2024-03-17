@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Mizushiii</title>
     <link rel="icon" href="ICON.png" type="image/x-icon">
     <style>
@@ -10,19 +12,20 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
         }
 
         .container {
-            flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             margin-bottom: 90px;
+            padding: 20px;
         }
 
         .button {
@@ -41,32 +44,43 @@
             width: 100%;
             padding: 10px 0;
             background-color: #F2D8B3;
+            position: fixed;
+            bottom: 0;
+            left: 0;
         }
 
         .social-icons img {
             width: 30px;
             height: 30px;
+            margin: 5px;
         }
 
+        @media only screen and (min-width: 600px) {
+            .container {
+                margin-bottom: 150px;
+            }
+
+            .button {
+                padding: 20px 30px;
+            }
+
+            .footer {
+                padding: 20px 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header> 
-        <img src="header.png" style="width: 100%; max-width: 100%;">
+        <img src="header.png">
     </header>
     
     <div class="container">
-        <table>
-            <tr>
-                <td><a href="Home.html" class="button">Home</a></td>
-            </tr>
-            <tr>
-                <td><br><a href="Products&Services.html" class="button">Products/Services</a></td>
-            </tr>
-            <tr>
-                <td><br><a href="About Us.html" class="button">About Us</a></td>
-            </tr>
-        </table>
+        <a href="Home.html" class="button">Home</a>
+        <br>
+        <a href="Products&Services.html" class="button">Products/Services</a>
+        <br>
+        <a href="About Us.html" class="button">About Us</a>
     </div>
 
     <footer class="footer">
