@@ -24,6 +24,14 @@
             margin: 5px;
         }
 
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
         .table-container {
             display: flex;
             justify-content: center;
@@ -31,12 +39,15 @@
             flex-wrap: wrap;
         }
 
-        .footer {
-            width: 100%;
-            padding: 10px 0;
-            text-align: center;
+        .table-container td {
+            padding: 10px;
         }
 
+        @media screen and (max-width: 600px) {
+            .table-container td {
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
